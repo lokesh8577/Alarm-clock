@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Alarm Clock</title>
+  <link href="./style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="date">
+      <div class="time">
+        <p class="time_show"></p>
+      </div>
+      <div class="show_date">
+        <p class="day"></p><br>
+        <p class="date_show"></p>
+      </div>
+
+    </div>
+    <div class="show_alarms">
+      <div class="alarm_time">
+        <h2></h2>
+      </div>
+    </div>
+    <button class="add_alarm">+ Alarm</button>
+    <div id="popup" style="display: none;">
+      <p>Enter time</p>
+      <input type="time" class="alarmTime">
+      <p id="dateText"></p>
+      <button onclick="closePopup()">Set Alarm</button>
+    </div>
+    <div id="popup_alarm" style="display: none;">
+
+
+      <h1>Wake up!</h1>
+      <button onclick="closePopup()">close</button>
+    </div>
+    <audio id="myAudio">
+
+      <source src="./WhatsApp Audio 2024-10-07 at 9.08.22 PM.mp3" type="audio/mpeg">
+
+    </audio>
+
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

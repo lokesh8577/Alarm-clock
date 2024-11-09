@@ -1,0 +1,136 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-image: url(./looking-far-away-4k-lb.jpg);
+  background-size: cover;
+}
+
+.container {
+  height: 500px;
+  width: 500px;
+  border: 2px solid #7C8363;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.show_alarms {
+  height: 400px;
+  width: 500px;
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#7C8363, #7C8363);
+  border-radius: 10px;
+}
+
+.date {
+  height: 100px;
+  width: 500px;
+  gap: 25px;
+  display: flex;
+  border-bottom: 2px solid #7C8363;
+}
+
+.time {
+  text-align: center;
+  height: 100px;
+  width: 350px;
+  font-size: 80px;
+  font-weight: bold;
+  margin-top: -15%;
+  color: #EDF4F2;
+}
+
+.show_date {
+  height: 100px;
+  width: 100px;
+}
+
+.day,
+.date_show {
+  color: #EDF4F2;
+}
+
+.day {
+  font-size: 35px;
+  margin-top: 0px;
+}
+
+.date_show {
+  font-size: 35px;
+  margin-top: -30px;
+}
+
+.alarm_time {
+  color: #EDF4F2;
+  height: 40px;
+  width: 450px;
+  font-size: 30px;
+  /* border: 1px solid white;
+  /* Fixed typo from 'soli' to 'solid' */
+  border-radius: 10px;
+  padding: 5px;
+  /* Added padding for better spacing */
+}
+
+.add_alarm {
+  position: fixed;
+  bottom: 0;
+  right: 0px;
+  color: #fff;
+  margin: 20px;
+  padding: 12px 15px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.3s;
+  z-index: 1;
+  background: #7C8363;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.add_alarm:hover {
+  box-shadow: 0 0.6em 0.5em -0.4em #31473A;
+  transform: translateY(-0.25em);
+  background: #31473A;
+}
+
+#popup,
+#po pup_alarm {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border: 1px solid #7C8363;
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  /* Light background for better contrast */
+}
+
+#popup_alarm {
+  text-align: center;
+  /* Center the alarm message */
+}
+
+h1 {
+  color: #EDF4F2;
+  /* Ensure the heading in the alarm popup is visible */
+}
